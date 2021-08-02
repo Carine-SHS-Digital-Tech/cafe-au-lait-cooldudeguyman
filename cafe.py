@@ -4,9 +4,15 @@ special = 1
 totals{
     "total orders": 0,
     "total days income": 0,
-    "total GST"
+    "total GST": 0,
 }
 while special == 1:
-    account = input("enter account name: ")
-    dict[account]
-    date = input("")
+    # account = input("enter account name: ")
+    # dict[account]
+    # date = input("")
+    operation = input("What operation? ")
+    operation_lower = operation.lower()
+    if operation_lower == "order ":
+        account = input("enter account name: ")
+        dict[account]
+        date = input("")
