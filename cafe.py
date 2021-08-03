@@ -2,6 +2,7 @@
 import csv
 special = 1
 totals = {
+    "THIS IS A DAILY SUMMARY": "",
     "total orders": 0,
     "total days income": 0,
     "total GST": 0,
@@ -88,3 +89,10 @@ while special == 1:
         storedata = open("daily_order.csv", "a")
         storedata.write(order)
         storedata.close()
+    elif operation == "daily summary":
+        print(totals)
+        storedata = open("daily_order.csv", "a")
+        storedata.write(totals)
+        storedata.close()
+    else:
+        print("this is not an operation")
