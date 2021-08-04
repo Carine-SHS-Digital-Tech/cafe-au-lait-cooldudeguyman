@@ -48,22 +48,26 @@ while cool == 1:
                 if coffee == "1":
                     quantity1 = input("how many do you want: ")
                     numnum1 = numnum1 + int(quantity1)
-                    order['Cappuccino num'] = numnum1
+                    order['number of Cappuccino ($3.00 each)'] = numnum1
+                    order['Cappuccino GST'] = numnum1
                     price = price + int(quantity1) * 3
                 elif coffee == "2":
                     quantity1 = input("how many do you want: ")
                     numnum2 = numnum2 + int(quantity1)
-                    order["Espresso num"] = numnum2
+                    order["number of Espresso ($2.25 each)"] = numnum2
+                    order["Espresso GST"] = numnum2
                     price = price + int(quantity1) * 2.25
                 elif coffee == "3":
                     quantity1 = input("how many do you want: ")
                     numnum3 = numnum3 + int(quantity1)
-                    order["Latte num"] = numnum3
+                    order["number of Latte ($2.50)"] = numnum3
+                    order["Latte GST"] = numnum3
                     price = price + int(quantity1) * 2.5
                 elif coffee == "4":
                     quantity1 = input("how many do you want: ")
                     numnum4 = numnum4 + int(quantity1)
-                    order["Iced Coffee num"] = numnum4
+                    order["number of Iced Coffee ($2.50)"] = numnum4
+                    order["Iced Coffee GST"] = numnum4
                     price = price + int(quantity1) * 2.5
                 else:
                     print("thats not an opption")
@@ -97,7 +101,7 @@ while cool == 1:
             totals["total days income"] + priceGST
             order["total(without GST)"] = price
             order["total(with Gst)"] = priceGST
-            print("heres the info about order", order, ":)")
+            print("heres your receipt", order, ":)")
             ordertocsv = str(order) + "/n"
             storedata = open("daily_order.csv", "w")
             storedata.write(ordertocsv)
