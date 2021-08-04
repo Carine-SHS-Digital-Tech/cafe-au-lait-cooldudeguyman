@@ -19,6 +19,7 @@ while cool == 1:
         order = {}
         tw = 1
         price = 0
+        print("operations: order and daily summary")
         operation = input("What operation? ")
         operation = operation.lower()
         if operation == "order":
@@ -49,25 +50,25 @@ while cool == 1:
                     quantity1 = input("how many do you want: ")
                     numnum1 = numnum1 + int(quantity1)
                     order['number of Cappuccino ($3.00 each)'] = numnum1
-                    order['Cappuccino GST'] = numnum1
+                    order['single Cappuccino GST'] = round(3 * 0.1)
                     price = price + int(quantity1) * 3
                 elif coffee == "2":
                     quantity1 = input("how many do you want: ")
                     numnum2 = numnum2 + int(quantity1)
                     order["number of Espresso ($2.25 each)"] = numnum2
-                    order["Espresso GST"] = numnum2
+                    order["single Espresso GST"] = round(2.25 * 0.1, 2)
                     price = price + int(quantity1) * 2.25
                 elif coffee == "3":
                     quantity1 = input("how many do you want: ")
                     numnum3 = numnum3 + int(quantity1)
                     order["number of Latte ($2.50)"] = numnum3
-                    order["Latte GST"] = numnum3
+                    order["single Latte GST"] = round(2.5 * 0.1, 2)
                     price = price + int(quantity1) * 2.5
                 elif coffee == "4":
                     quantity1 = input("how many do you want: ")
                     numnum4 = numnum4 + int(quantity1)
                     order["number of Iced Coffee ($2.50)"] = numnum4
-                    order["Iced Coffee GST"] = numnum4
+                    order["single Iced Coffee GST"] = round(2.5 * 0.1, 2)
                     price = price + int(quantity1) * 2.5
                 else:
                     print("thats not an opption")
@@ -102,14 +103,14 @@ while cool == 1:
             order["total(without GST)"] = price
             order["total(with Gst)"] = priceGST
             print("heres your receipt", order, ":)")
-            ordertocsv = str(order) + "/n"
-            storedata = open("daily_order.csv", "w")
+            ordertocsv = str(order) + "\n"
+            storedata = open("daily_order.csv", "a")
             storedata.write(ordertocsv)
             storedata.close()
         elif operation == "daily summary":
             print(totals)
-            totalstocsv = str(order) + "/n"
-            storedata = open("daily_order.csv", "w")
+            totalstocsv = str(order) + "\n"
+            storedata = open("daily_order.csv", "a")
             storedata.write(totalstocsv)
             storedata.close()
         else:
