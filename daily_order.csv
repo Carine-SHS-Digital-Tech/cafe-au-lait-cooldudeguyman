@@ -20,3 +20,5 @@
 {'THIS IS A DAILY SUMMARY': '', 'total orders': 1, 'total days income': 3.3, 'total GST': 0.3, 'take away orders': 0, 'eat in orders': 0}
 {'name': 'liam', 'time of order': '11', 'order type': 'take away', 'number of Cappuccino ($3.00 each)': 32, 'single Cappuccino GST': 0.3, 'total(without GST)': 100.8, 'total(with Gst)': 110.88}
 {'THIS IS A DAILY SUMMARY': '', 'total orders': 1, 'total days income': 110.88, 'total GST': 10.08, 'take away orders': 1, 'eat in orders': 0}
+{'name': 'lia', 'time of order': '11', 'order type': 'take away', 'number of Cappuccino ($3.00 each)': 110, 'single Cappuccino GST': 0.3, 'total(without GST)': 346.5, 'total(with Gst)': 381.15}
+{'THIS IS A DAILY SUMMARY': '', 'total orders': 2, 'total days income': 381.15, 'total GST': 34.65, 'take away orders': 1, 'eat in orders': 0}
