@@ -59,13 +59,13 @@ while special == 1: # while loop that goes on forever(unless stoped)
             elif coffee == "3": # works if its 3
                 quantity1 = input("how many do you want: ") #asks for how many you want
                 numnum3 = numnum3 + int(quantity1) #keeps adding quantity
-                order["number of Latte ($2.50)"] = numnum3 #added to dict
+                order["number of Latte ($2.50 each)"] = numnum3 #added to dict
                 order["single Latte GST"] = round(2.5 * 0.1, 2) #added to dict and rounds to 2 digits
                 price = price + int(quantity1) * 2.5 #adds to price
             elif coffee == "4": # works if its 4
                 quantity1 = input("how many do you want: ") #asks for how many you want
                 numnum4 = numnum4 + int(quantity1) #keeps adding quantity
-                order["number of Iced Coffee ($2.50)"] = numnum4 #added to dict
+                order["number of Iced Coffee ($2.50 each)"] = numnum4 #added to dict
                 order["single Iced Coffee GST"] = round(2.5 * 0.1, 2) #added to dict and rounds to 2 digits
                 price = price + int(quantity1) * 2.5 #adds to price
             else:

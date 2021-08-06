@@ -22,3 +22,8 @@
 {'THIS IS A DAILY SUMMARY': '', 'total orders': 1, 'total days income': 110.88, 'total GST': 10.08, 'take away orders': 1, 'eat in orders': 0}
 {'name': 'lia', 'time of order': '11', 'order type': 'take away', 'number of Cappuccino ($3.00 each)': 110, 'single Cappuccino GST': 0.3, 'total(without GST)': 346.5, 'total(with Gst)': 381.15}
 {'THIS IS A DAILY SUMMARY': '', 'total orders': 2, 'total days income': 381.15, 'total GST': 34.65, 'take away orders': 1, 'eat in orders': 0}
+{'THIS IS A DAILY SUMMARY': '', 'total orders': 0, 'total days income': 0, 'total GST': 0, 'take away orders': 0, 'eat in orders': 0}
+{'name': 'liam', 'time of order': '11', 'order type': 'eat in', 'number of Iced Coffee ($2.50)': 5, 'single Iced Coffee GST': 0.25, 'total(without GST)': 12.5, 'total(with Gst)': 13.75}
+{'THIS IS A DAILY SUMMARY': '', 'total orders': 1, 'total days income': 13.75, 'total GST': 1.25, 'take away orders': 0, 'eat in orders': 1}
+{'THIS IS A DAILY SUMMARY': '', 'total orders': 0, 'total days income': 0, 'total GST': 0, 'take away orders': 0, 'eat in orders': 0}
+{'name': 'liam', 'time of order': '11', 'order type': 'eat in', 'number of Cappuccino ($3.00 each)': 5, 'single Cappuccino GST': 0.3, 'number of Iced Coffee ($2.50)': 3, 'single Iced Coffee GST': 0.25, 'total(without GST)': 22.5, 'total(with Gst)': 24.75}
